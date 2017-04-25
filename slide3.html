@@ -1,0 +1,162 @@
+<link type="text/css" rel="stylesheet" href="styles/base.css">
+<link type="text/css" rel="stylesheet" href="styles/slide3.css">
+
+<div class="container ${slideName}">
+
+    <div>
+
+        <h1>What is DOTA 2?</h1>
+
+        <p>
+            DOTA 2 is a computer game where two teams of 5 compete on a large playing field with the winner decided by
+            whichever team can destroy the key building in the enemy's base, called the Ancient, first.
+        </p>
+
+        <p>In fact, DOTA is an acronym for Defence of the Ancients, </p>
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+
+<script type="text/javascript" src="scripts/external/MDN.Math10.js"></script>
+<script type="text/javascript" src="scripts/external/proton-1.0.0.min.js"></script>
+<script type="text/javascript" src="scripts/partiOn.js"></script>
+<script type="text/javascript" src="scripts/particle.js"></script>
+<script type="text/javascript" src="scripts/emitter.js"></script>
+
+<script type="text/javascript">
+    const shapes = {
+        SQUARE: 'SQUARE',
+        CIRCLE: 'CIRCLE'
+    };
+
+    const blendModes = {
+        'NORMAL': 'normal',
+        'MULTIPLY': 'multiply',
+        'SCREEN': 'screen',
+        'OVERLAY': 'overlay',
+        'DARKEN': 'darken',
+        'LIGHTEN': 'lighten',
+        'COLOR_DODGE': 'color-dodge',
+        'COLOR_BURN': 'color-burn',
+        'HARD_LIGHT': 'hard-light',
+        'SOFT_LIGHT': 'soft-light',
+        'DIFFERENCE': 'difference',
+        'EXCLUSION': 'exclusion',
+        'HUE': 'hue',
+        'SATURATION': 'saturation',
+        'COLOR': 'color',
+        'LUMINOSITY': 'luminosity'
+    };
+
+    const colorTypes = {
+        SOLID: 'SOLID',
+        GRADIENT: 'GRADIENT'
+    };
+
+    const gradientTypes = {
+        VERTICAL: 'VERTICAL',
+        HORIZONTAL: 'HORIZONTAL',
+        RADIAL: 'RADIAL'
+    };
+
+    const canvas = document.getElementById('canvas');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const options = [{
+        name: 'envious',
+        x: canvas.width,
+        y: canvas.height,
+        maxParticles: 1000,
+        emissionRate: 1,
+        shape: shapes.CIRCLE,
+        colorType: colorTypes.GRADIENT,
+        gradientType: gradientTypes.RADIAL,
+        startColor1: [150, 244, 100, 1],
+        startColor2: [255, 200, 200, 0],
+        endColor1: [0, 50, 0, 0],
+        endColor2: [0, 100, 0, 0],
+        colorVariance: 5,
+        startSize: 200,
+        endSize: 50,
+        startSizeVariance: 100,
+        endSizeVariance: 600,
+        startSpeed: 2,
+        endSpeed: 5,
+        startSpeedVariance: 50,
+        endSpeedVariance: 10,
+        direction: 0,
+        directionVariance: 360,
+        startDirectionVariance: 30,
+        endDirectionVariance: 100,
+        duration: 2,
+        durationVariance: 10
+    }, {
+        name: 'burning',
+        x: canvas.width,
+        y: canvas.height,
+        maxParticles: 500,
+        emissionRate: 2,
+        shape: shapes.CIRCLE,
+        colorType: colorTypes.GRADIENT,
+        gradientType: gradientTypes.RADIAL,
+        startColor1: [255, 255, 100, 1],
+        startColor2: [255, 255, 100, 0],
+        endColor1: [50, 0, 0, 0],
+        endColor2: [10, 0, 0, 0],
+        colorVariance: 5,
+        startSize: 100,
+        endSize: 50,
+        startSizeVariance: 100,
+        endSizeVariance: 600,
+        startSpeed: 2,
+        endSpeed: 5,
+        startSpeedVariance: 50,
+        endSpeedVariance: 10,
+        direction: 0,
+        directionVariance: 360,
+        startDirectionVariance: 30,
+        endDirectionVariance: 100,
+        duration: 2,
+        durationVariance: 10
+    }, {
+        name: 'bats',
+        x: canvas.width,
+        y: canvas.height,
+        maxParticles: 100,
+        emissionRate: 1,
+        shape: shapes.CIRCLE,
+        colorType: colorTypes.GRADIENT,
+        gradientType: gradientTypes.RADIAL,
+        startColor1: [0, 0, 0, 1],
+        startColor2: [0, 0, 0, 1],
+        endColor1: [0, 0, 0, 0],
+        endColor2: [0, 0, 0, 0],
+        colorVariance: 10,
+        startSize: 3,
+        endSize: 1,
+        startSizeVariance: 100,
+        endSizeVariance: 300,
+        startSpeed: 5,
+        endSpeed: 10,
+        startSpeedVariance: 50,
+        endSpeedVariance: 50,
+        direction: 0,
+        directionVariance: 360,
+        startDirectionVariance: 30,
+        endDirectionVariance: 100,
+        duration: 5,
+        durationVariance: 50
+    }];
+
+
+    const party = new PartiOn(canvas);
+
+    party.addEmitter(options[2]);
+    party.addEmitter(options[0]);
+    party.setBackgroundColor('rgba(0,0,0,0.7)');
+    party.setBlendMode(PartiOn.constants.canvas.blendModes.SOFT_LIGHT);
+
+    console.log('PartiOn says HELLO!');
+</script>
