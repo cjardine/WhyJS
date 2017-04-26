@@ -70,7 +70,7 @@ html, body, .container {
   width: 100%; }
 
 .container h1, .container h2, .container h3, .container p {
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.7);
   margin: 0; }
 
 h2, h3 {
@@ -167,7 +167,8 @@ wjs-slide-show {
 wjs-slide {
   position: absolute;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  z-index: 0; }
 
 wjs-authorization-tools {
   color: #fff;

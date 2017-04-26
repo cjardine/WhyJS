@@ -6,26 +6,30 @@
     <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="styles/base.css">
 </head>
-<body>
+<body id="application">
 
 <wjs-authorization-tools></wjs-authorization-tools>
 <wjs-slide-show class="hide">
     <wjs-slide src="slide1.html"></wjs-slide>
     <wjs-slide src="slide2.html"></wjs-slide>
-    <wjs-slide src="slide3.html"></wjs-slide>
+    <wjs-slide src="slide3.html" controller="scripts/slide3.js"></wjs-slide>
+    <wjs-slide src="slide4.html" controller="scripts/slide3.js"></wjs-slide>
     <wjs-toolbar>
         <button class="previous">previous</button>
         <button class="next">next</button>
     </wjs-toolbar>
 </wjs-slide-show>
 
+
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
 
-<script type="text/javascript">
-</script>
-
+<script type="text/javascript" src="scripts/external/MDN.Math10.js"></script>
+<script type="text/javascript" src="scripts/external/proton-1.0.0.min.js"></script>
+<script type="text/javascript" src="scripts/partiOn.js"></script>
+<script type="text/javascript" src="scripts/particle.js"></script>
+<script type="text/javascript" src="scripts/emitter.js"></script>
 
 <script type="text/javascript" src="application.js"></script>
 <script type="text/javascript" src="slideshow.js"></script>
