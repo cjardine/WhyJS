@@ -1,0 +1,20 @@
+.slide4-container {
+  background-color: #300;
+}
+
+.slide4 {
+  background-image: url('../images/lycan.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 50%;
+  padding: 10% 50px 0 40%;
+
+  canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
