@@ -89,37 +89,48 @@ html, body, .container {
 }
 
 .container {
-  h1, h2, h3, p {
-    text-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.7);
+  h1, h2, h3, h4, p {
+    text-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.7);
     margin: 0;
   }
-}
 
-h2, h3 {
-  font-weight: 100;
-  color: #ddd;
-}
+  h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #ddd;
+  }
 
-h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
-  font-weight: 400;
-}
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 100;
+  }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
-}
+  h2 {
+    font-size: 0.8rem;
+  }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.6rem;
-}
+  h3 {
+    font-size: 0.6rem;
+  }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.3rem;
-  font-weight: 100;
+  h4 {
+    font-size: 0.3rem;
+  }
+
+  p {
+    font-size: 0.3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.3rem;
+    text-indent: 0.3rem;
+    line-height: 0.4rem;
+    &:first-letter {
+      font-family: 'Cinzel', serif;
+      font-size: 0.6rem;
+      line-height: 0.4rem;
+    }
+  }
+
 }
 
 .container {

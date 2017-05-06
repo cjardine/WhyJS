@@ -1,20 +1,30 @@
-<link type="text/css" rel="stylesheet" href="styles/base.css">
-<link type="text/css" rel="stylesheet" href="styles/slide3.css">
+<link type="text/css" rel="stylesheet" href="styles/slides/${slideName}.css">
 
 <div class="container ${slideName}">
 
     <div>
 
-        <h1>What is DOTA 2?</h1>
+        <h1>
+            What is DOTA 2?
+        </h1>
 
         <p>
-            DOTA 2 is a computer game where two teams of 5 compete on a large playing field with the winner decided by
-            whichever team can destroy the key building in the enemy's base, called the Ancient, first.
+            DOTA 2 is a PC video game, made by Valve, the defined the gaming genre called MOBA (Multi-player Online Battle Arena). This genre contains some of the most popular video games currently on the market, including League of Legends and Blizzard's (creators of World of Warcraft) Heroes of the Storm.
         </p>
 
-        <p>In fact, DOTA is an acronym for Defence of the Ancients, </p>
-    </div>
-</div>
-<canvas id="canvas"></canvas>
+        <p>
+            It consists of 10 players, split in to 2 teams of 5, competing by controlling unique heroes on a closed map. The objective is to be the first team to destroy the enemy team's base while defending your own.
+        </p>
 
-<script type="text/javascript" src="scripts/slide3.js"></script>
+        <p>
+            Each base is arranged in opposite corners with 3 lanes radiating out and connecting with the lane radiating from the other teams base. The lanes are protected by towers, and every 30 seconds a group of creeps that fight for your team are spawn and begin traveling down each lane.
+        </p>
+
+        <p>
+            <img src="images/Map_of_MOBA.svg.png">
+        </p>
+    </div>
+    <canvas id="canvas-slide3"></canvas>
+</div>
+
+<script type="text/javascript" src="scripts/slides/${slideName}.js"></script>

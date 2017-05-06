@@ -1,0 +1,30 @@
+.slide6-container {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#99aa66+33,6d8426+100 */
+  background: #99aa66; /* Old browsers */
+  background: -moz-radial-gradient(bottom left, ellipse cover,  #000 33%, #999 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(bottom left, ellipse cover,  #000 33%,#999 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at bottom left,  #000 33%,#999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.slide6 {
+  background-image: url('../../images/shadow_fiend.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 50%;
+  padding: 10% 50px 0 40%;
+
+  canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('../../images/volcano.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 75%;
+  }
+}

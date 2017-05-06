@@ -12,29 +12,39 @@
 <wjs-slide-show class="hide">
     <wjs-slide src="slide1.html"></wjs-slide>
     <wjs-slide src="slide2.html"></wjs-slide>
-    <wjs-slide src="slide3.html" controller="scripts/slide3.js"></wjs-slide>
-    <wjs-slide src="slide4.html" controller="scripts/slide3.js"></wjs-slide>
+    <wjs-slide src="slide3.html"></wjs-slide>
+    <wjs-slide src="slide4.html"></wjs-slide>
+    <wjs-slide src="slide5.html"></wjs-slide>
+    <wjs-slide src="slide6.html"></wjs-slide>
+    <wjs-slide src="slide7.html"></wjs-slide>
     <wjs-toolbar>
         <button class="previous">previous</button>
         <button class="next">next</button>
     </wjs-toolbar>
 </wjs-slide-show>
 
+<wjs-sounds>
+    <audio src="sounds/foley_cable_whoosh_air_003.mp3" id="swoosh"></audio>
+    <audio src="sounds/theme.mp3" id="theme"></audio>
+</wjs-sounds>
 
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+
+<script type="text/javascript" src="scripts/CanvasElement.js"></script>
 
 <script type="text/javascript" src="scripts/external/MDN.Math10.js"></script>
 <script type="text/javascript" src="scripts/external/proton-1.0.0.min.js"></script>
 <script type="text/javascript" src="scripts/partiOn.js"></script>
 <script type="text/javascript" src="scripts/particle.js"></script>
 <script type="text/javascript" src="scripts/emitter.js"></script>
+<script type="text/javascript" src="scripts/sounds.js"></script>
 
-<script type="text/javascript" src="application.js"></script>
-<script type="text/javascript" src="slideshow.js"></script>
-<script type="text/javascript" src="slide.js"></script>
-<script type="text/javascript" src="auth.js"></script>
+<script type="text/javascript" src="scripts/application.js"></script>
+<script type="text/javascript" src="scripts/slideshow.js"></script>
+<script type="text/javascript" src="scripts/slide.js"></script>
+<script type="text/javascript" src="scripts/auth.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
 </body>
